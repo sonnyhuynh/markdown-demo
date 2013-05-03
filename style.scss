@@ -1,0 +1,44 @@
+@import "bootstrap/bootstrap-custom";
+
+$authorLinkColor: $green;
+
+header {
+  div {
+    > * {
+      margin: $fluidGridGutterWidth;
+    }
+  }
+
+  a {
+    &.author {
+      color: $authorLinkColor;
+
+      &:hover {
+        color: darken($authorLinkColor, 15%);
+      }
+    }
+  }
+}
+
+section {
+  padding-right: $fluidGridGutterWidth;
+  &:first-of-type {
+    padding-left: $fluidGridGutterWidth;
+  }
+}
+
+header {
+  color: white;
+  background: $grayDarker;
+}
+
+.md {
+  color: white !important;
+  background: $grayDark;
+
+  > pre {
+    color: white;
+    background: none;
+    border: 0;
+  }
+}
